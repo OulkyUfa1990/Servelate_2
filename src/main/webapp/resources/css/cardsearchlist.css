@@ -1,0 +1,25 @@
+td {
+    border: none;
+    text-align: justify;
+}
+a{
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+    color: black;
+    font-weight: bold;
+}
+a:hover {
+    color: #1e5086; /* Цвет ссылки */
+}
+.wrapper{
+    width: 80%;
+    position: relative;
+    left: 10%;
+}
+.inf{
+    font-weight: bolder;
+    color: grey;
+}
+.anons{
+    font-weight: bolder;
+    font-size: 20px;
+}

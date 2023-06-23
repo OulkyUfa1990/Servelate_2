@@ -1,0 +1,50 @@
+div.numbercards {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 90%;
+    top: 4%;
+    background-image: linear-gradient(to right, #41295a 0%, #2F0743  51%, #41295a  100%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+}
+div.addcard, div.search {
+    width: 200px;
+    height: 120px;
+    border: none;
+}
+div.addcard {
+    background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
+    text-align: center;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+}
+div.search {
+    background-image: linear-gradient(to right, #FF512F 0%, #DD2476  51%, #FF512F  100%);
+    text-align: center;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+}
+div.list-menu{
+    width: 180px;
+    height: 80px;
+    text-align: right;
+    color: #e9f1e5;
+}
+.addcard a, .search a {
+    color: white; /* Цвет обычной ссылки */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+}
+.addcard a:hover, .search a:hover {
+
+}
+.user {
+    font-size: 20px;
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+<servlet>
+        <servlet-name>add</servlet-name>
+        <servlet-class>app.users.servlets.AddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>add</servlet-name>
+        <url-pattern>/http://localhost:8081/add</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>list</servlet-name>
+        <servlet-class>app.users.servlets.ListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>list</servlet-name>
+        <url-pattern>/http://localhost:8081/list</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>card</servlet-name>
+        <servlet-class>app.card.servlets.AddCard</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>card</servlet-name>
+        <url-pattern>/http://localhost:8081/card</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>search</servlet-name>
+        <servlet-class>app.search.SearchCards</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>search</servlet-name>
+        <url-pattern>/http://localhost:8081/searchcard</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>/</servlet-name>
+        <servlet-class>app.login.servlets.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>/</servlet-name>
+        <url-pattern>/http://localhost:8081</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>menuUser</servlet-name>
+        <servlet-class>app.login.servlets.MenuUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>menuUser</servlet-name>
+        <url-pattern>/http://localhost:8081/menuUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>menuAdmin</servlet-name>
+        <servlet-class>app.login.servlets.MenuAdminServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>menuAdmin</servlet-name>
+        <url-pattern>/http://localhost:8081/menuAdmin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>cardout</servlet-name>
+        <servlet-class>app.edit.CardOut</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cardout</servlet-name>
+        <url-pattern>/http://localhost:8081/cardout</url-pattern>
+    </servlet-mapping>
+
+</web-app>
